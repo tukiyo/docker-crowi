@@ -1,11 +1,13 @@
 # docker-crowi
-Crowi wiki on Docker
+
+* [Crowi wiki](http://site.crowi.wiki/) on Docker
 
 ## Example docker-compose.yml
 
 ```yaml
 crowi:
-    image: bakudankun/crowi
+    #image: bakudankun/crowi
+    image: tukiyo3/crowi
     links:
         - db
         - redis
