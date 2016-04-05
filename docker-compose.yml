@@ -4,11 +4,18 @@ crowi:
     links:
         - db
         - redis
+        - search
     ports:
-        - 8080:3000
+        - 8100:3000
 
 db:
     image: mongo
 
 redis:
     image: redis:alpine
+
+search:
+    image: elasticsearch
+    ports:
+        - 9200:9200
+        - 9300:9300
