@@ -1,0 +1,14 @@
+crowi:
+    #image: bakudankun/crowi
+    image: tukiyo3/crowi
+    links:
+        - db
+        - redis
+    ports:
+        - 8080:3000
+
+db:
+    image: mongo
+
+redis:
+    image: redis:alpine
